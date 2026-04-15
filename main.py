@@ -8,8 +8,12 @@
     for nombre in lista_nombres:
         # TODO: Implementar la lógica de limpieza y formato
         # 1. Eliminar espacios en blanco al inicio y final
+        nombres_limpios = nombre.strip()
         # 2. Poner la primera letra en mayúscula
+        pr_letra_may= nombres_limpios.capitalize()
         # 3. Solo agregar a la lista si el nombre no está vacío
+        if nombres_limpios:
+            procesados.append(pr_letra_may)
         pass
 
     return procesados
